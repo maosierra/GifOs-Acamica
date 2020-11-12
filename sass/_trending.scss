@@ -1,0 +1,30 @@
+.trending {
+  background: #f3f5f8;
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #572ee5;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 46px;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 23px;
+  }
+
+  .carrusel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin: 32px 0px 82px 0px;
+    img {
+        margin: 0px 22px;
+        width: 64.8vw;
+    }
+  }
+}

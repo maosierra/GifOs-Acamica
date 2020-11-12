@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <img class="nav-bar-logo" src="./assets/logo-mobile.svg" alt="GIFOs logo">
+        <ul id="nav-bar-options" class="nav-bar-options">
+            <li id="changeTheme">Modo Nocturno</li>
+            <hr>
+            <li>Favoritos</li>
+            <hr>
+            <li id="createGif">Mis GIFOS</li>
+            <hr>
+        </ul>
+        <img class="nav-bar-open" src="./assets/burger.svg" alt="Menu" id="nav-bar-open">
+    </nav>
+
+    <main>
+        <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+        <img class="main-ilustra" src="./assets/ilustra_header.svg" alt="ilustra_header">
+        <div class="main-search">
+            <div class="main-search-input">
+                <input id="searchBar" type="text" placeholder="Busca GIFOS y más">
+                <img src="./assets/icon-search.svg" alt="search icon">
+            </div>
+            <div class="main-search-suggestion">
+                <p>text 1</p>
+                <p>text 2</p>
+                <p>text 3</p>
+                <p>text 4</p>
+            </div>
+        </div>
+        <h3>Trending:</h3>
+        <p class="main-description"></p>
+    </main>
+
+    <section class="results">
+        <hr>
+        <h2></h2>
+        <div class="results-img">
+            <!-- Images will be load from gifphy search -->
+        </div>
+
+        <input id="btnShowMore" type="button" value="VER MÁS">
+    </section>
+
+    <section class="trending">
+        <h3>Trending GIFOS</h3>
+        <p>Mira los últimos GIFOS de nuestra comunidad.</p>
+        <div class="carrusel">
+            <!-- Images will be load from gifphy trendings -->
+        </div>
+        <br>
+    </section>
+
+    <footer>
+        <p>Compartir en:</p>
+        <div class="socials">
+            <img src="./assets/icon_facebook.svg" alt="facebok">
+            <img src="./assets/icon-twitter.svg" alt="twitter">
+            <img src="./assets/icon_instagram.svg" alt="instagram">
+        </div>
+        <p>© GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <img id="modal-close" class="modal-close" src="./assets/close.svg" alt="close">
+        <img id="selectedGif" class="modal-gif" src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif"
+            alt="selected gif">
+        <div class="modal-details">
+            <div>
+                <h4>usuario</h4>
+                <h3>Titulo gif</h3>
+            </div>
+            <div>
+                <img src="./assets/icon-fav-active.svg" alt="icono favorito">
+                <a id="downloadGif" href="" target="_blank" download>
+                    <img src="./assets/icon-download-hover.svg" alt="descargar gif">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/services.js" type="module"></script>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+
+</html>

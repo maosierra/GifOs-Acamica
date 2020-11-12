@@ -1,0 +1,38 @@
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 29px 27px 17px 22px;
+  border-top: 5px solid #572ee5;
+  .nav-bar-logo {
+    width: 48px;
+    z-index: 10;
+  }
+  .nav-bar-options {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 5px - 29px - 48px - 17px);
+    background: rgba(87, 46, 229, 0.9);
+    padding-top: 17px;
+    box-sizing: border-box;
+    li {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+    }
+    hr {
+      width: 41px;
+      margin: auto;
+    }
+  }
+}

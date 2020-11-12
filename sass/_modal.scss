@@ -1,0 +1,32 @@
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.95;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &-close{
+        align-self: flex-end;
+        margin-right: 10vw;
+    }
+
+    &-gif{
+        align-self: center;
+        width: 80vw;
+        margin-top: 73px;
+    }
+
+    &-details{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        align-self: center;
+        width: 80vw;
+    }
+}
